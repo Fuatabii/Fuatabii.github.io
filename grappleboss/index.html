@@ -3,93 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grapple Boss | İş Makinesi ve Vinç Simülasyonu</title>
-<meta name="description" content="Grapple Boss'ta polipli iş makinesini kullan, limanlarda hurda yükle ve makineni geliştir. Android için 3D vinç simülasyonu. Ana oynanış çevrimdışı.">
+<title>Grapple Boss: Vinç Simülatörü ve İş Makinesi Oyunu</title>
+<meta name="description" content="Android için 3D vinç simülatörü Grapple Boss. Limanlarda hurda yükle, makineni geliştir ve çevrimdışı oyna. Oynanış videosu, rehber ve Google Play bağlantısı.">
 <link rel="canonical" href="https://fuatabii.github.io/grappleboss/">
+<link rel="alternate" hreflang="tr" href="https://fuatabii.github.io/grappleboss/">
+<link rel="alternate" hreflang="en" href="https://fuatabii.github.io/grappleboss/en/">
+<link rel="alternate" hreflang="x-default" href="https://fuatabii.github.io/grappleboss/en/">
 <link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Grapple Boss — Yükü kavra. Kontrolü ele al.">
-<meta property="og:description" content="Limanlarda hurda yükle, makineni geliştir ve aynı işte arkadaşına meydan oku. Android'de oyna.">
+<meta property="og:title" content="Grapple Boss: Vinç Simülatörü ve İş Makinesi Oyunu">
+<meta property="og:description" content="Android için 3D vinç simülatörü Grapple Boss. Limanlarda hurda yükle, makineni geliştir ve çevrimdışı oyna. Oynanış videosu, rehber ve Google Play bağlantısı.">
 <meta property="og:url" content="https://fuatabii.github.io/grappleboss/">
 <meta property="og:image" content="https://fuatabii.github.io/grappleboss/icon.png">
-<meta property="og:image:alt" content="Grapple Boss oyun simgesi">
+<meta property="og:image:alt" content="Grapple Boss">
 <meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoGame","name":"Grapple Boss","url":"https://fuatabii.github.io/grappleboss/","image":"https://fuatabii.github.io/grappleboss/icon.png","description":"A 3D grapple crane simulator. Load scrap in ports, upgrade your machine and challenge a friend to the same job.","operatingSystem":"Android","applicationCategory":"GameApplication","genre":"Simulation","inLanguage":["tr","en"],"installUrl":"https://play.google.com/store/apps/details?id=com.grappleboss.app"}
-</script>
-<style>
-:root{color-scheme:dark;--bg:#181b16;--surface:#22271f;--ink:#f4f1e8;--muted:#b9bfb0;--accent:#f2b83b;--line:#3c4336}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-a{color:inherit;text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
-.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-header{border-bottom:1px solid var(--line)}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:19px;font-weight:800;letter-spacing:-.4px}
-.brand img{border-radius:13px;width:42px;height:42px}nav{display:flex;gap:24px;font-size:14px}nav a{text-decoration:none;color:var(--muted)}
-.hero{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:72px;padding:76px 0 64px}
-.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin:0 0 18px}
-h1{font-size:clamp(42px,5.5vw,68px);line-height:1.05;letter-spacing:-2.5px;margin:0 0 25px;max-width:650px}
-h1 span{color:var(--accent)}.intro{font-size:19px;max-width:560px;color:var(--muted);margin:0 0 26px}
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:8px;background:var(--accent);padding:13px 22px;color:#191d15;text-decoration:none;font-weight:800;min-height:52px}
-.cta span{font-size:22px;line-height:1}.fine{font-size:12px;color:var(--muted);margin:13px 0 0;max-width:530px}
-.hero figure{margin:0;position:relative;justify-self:center;width:min(100%,330px)}
-.hero figure:before{content:"";position:absolute;inset:8% -10%;z-index:-1;background:radial-gradient(ellipse,#f2b83b22,transparent 70%)}
-.game-shot{display:block;width:100%;height:auto;border-radius:17px;border:1px solid #5b634a;box-shadow:0 24px 70px #0006}
-figcaption{margin-top:10px;color:var(--muted);font-size:12px;text-align:center}
-.strip{display:flex;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0}
-.strip span{color:var(--muted);font-size:14px;flex:1;min-width:180px}.strip b{color:var(--accent);margin-right:8px}
-section{padding:64px 0}.trailer{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#10130f}.trailer iframe{width:100%;aspect-ratio:16/9;display:block;border:0}h2{font-size:clamp(29px,3vw,42px);line-height:1.2;letter-spacing:-1px;margin:0 0 26px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px}
-.number{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:1px}.card h3{font-size:22px;line-height:1.25;margin:16px 0 12px}.card p{color:var(--muted);font-size:15px;margin:0}
-.english{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:60px}
-.english p{color:var(--muted);margin:0 0 22px}.english h3{font-size:21px;margin:0 0 15px}
-footer{border-top:1px solid var(--line);padding:25px 0 32px;color:var(--muted);font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{margin-left:18px}
-@media(max-width:760px){.wrap{width:min(100% - 32px,560px)}header .wrap{padding:16px 0;gap:12px}.brand{font-size:16px}.brand img{width:36px;height:36px}nav{gap:16px;font-size:13px}.hero{grid-template-columns:1fr;gap:38px;padding:45px 0 38px}h1{letter-spacing:-1.8px;font-size:48px}.intro{font-size:17px}.hero figure{width:255px}.cards{grid-template-columns:1fr}.english{grid-template-columns:1fr;gap:30px}section{padding:42px 0}.strip{gap:8px}.strip span{min-width:100%;font-size:13px}.fine{font-size:12px}footer a{margin:0 16px 0 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
+<meta name="twitter:title" content="Grapple Boss: Vinç Simülatörü ve İş Makinesi Oyunu">
+<meta name="twitter:description" content="Android için 3D vinç simülatörü Grapple Boss. Limanlarda hurda yükle, makineni geliştir ve çevrimdışı oyna. Oynanış videosu, rehber ve Google Play bağlantısı.">
+<meta name="twitter:image" content="https://fuatabii.github.io/grappleboss/icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://fuatabii.github.io/grappleboss/#website","url":"https://fuatabii.github.io/grappleboss/","name":"Grapple Boss","inLanguage":["tr","en"]},{"@type":"VideoGame","@id":"https://fuatabii.github.io/grappleboss/#game","name":"Grapple Boss","url":"https://fuatabii.github.io/grappleboss/","image":"https://fuatabii.github.io/grappleboss/icon.png","description":"Android için 3D vinç simülatörü Grapple Boss. Limanlarda hurda yükle, makineni geliştir ve çevrimdışı oyna. Oynanış videosu, rehber ve Google Play bağlantısı.","operatingSystem":"Android","applicationCategory":"GameApplication","genre":"Simulation","inLanguage":["tr","en"],"installUrl":"https://play.google.com/store/apps/details?id=com.grappleboss.app","publisher":{"@type":"Organization","name":"Amanos Games"},"sameAs":["https://play.google.com/store/apps/details?id=com.grappleboss.app"]},{"@type":"WebPage","@id":"https://fuatabii.github.io/grappleboss/#webpage","url":"https://fuatabii.github.io/grappleboss/","name":"Grapple Boss: Vinç Simülatörü ve İş Makinesi Oyunu","description":"Android için 3D vinç simülatörü Grapple Boss. Limanlarda hurda yükle, makineni geliştir ve çevrimdışı oyna. Oynanış videosu, rehber ve Google Play bağlantısı.","inLanguage":"tr","isPartOf":{"@id":"https://fuatabii.github.io/grappleboss/#website"},"about":{"@id":"https://fuatabii.github.io/grappleboss/#game"}}]}</script>
+</head><body>
+<a class="skip" href="#main">İçeriğe geç</a>
 <header><div class="wrap">
 <a class="brand" href="./"><img src="icon.png" width="42" height="42" alt="">Grapple Boss</a>
-<nav aria-label="Ana menü"><a href="#oyun">Oyun</a><a href="#english" lang="en">English</a><a href="destek.html">Destek</a></nav>
+<nav aria-label="Ana menü"><a href="#oyun">Oyun</a><a href="nasil-oynanir/">Nasıl oynanır?</a><a href="en/" lang="en" hreflang="en">English</a><a href="destek.html">Destek</a></nav>
 </div></header>
-<main class="wrap">
-<div class="hero">
-<div>
-<p class="eyebrow">Android · 3D iş makinesi simülasyonu</p>
-<h1>Yükü kavra.<br><span>Kontrolü ele al.</span></h1>
-<p class="intro">Polipli yükleyicinin başına geç. Hurdayı kavra, salınımı durdur ve yükünü hedefe bırak. Temiz dökümlerle puanını yükselt; kazandıklarınla makineni geliştir.</p>
-<a class="cta" href="https://play.google.com/store/apps/details?id=com.grappleboss.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Downed%26utm_campaign%3Dgrapple_launch_tr">Google Play'de oyna <span aria-hidden="true">↗</span></a>
-<p class="fine">Ana oynanış çevrimdışı kullanılabilir. Reklamlar ve uygulama içi satın almalar içerir; bu işlemler internet gerektirir.</p>
-</div>
-<figure>
-<img class="game-shot" src="https://lh3.googleusercontent.com/pJc54zirnAPJfioVBqTXg4_2XKGszwp4HuCjHZi-Th37dPw9mfWND3pGwKVBhIBBXrDkOT3KzYENTKZSxcIltg" width="1080" height="1920" alt="Grapple Boss'ta polipli yükleyiciyle hurda yükleme oynanışını gösteren mağaza ekran görüntüsü" fetchpriority="high">
-<figcaption>Oyunun Google Play mağaza görseli</figcaption>
-</figure>
-</div>
-<div class="strip" aria-label="Oyun özellikleri"><span><b>01</b> İki kontrol çubuğu</span><span><b>02</b> Türkiye ve ABD limanları</span><span><b>03</b> Kariyer ve hızlı oyun</span></div>
-<section aria-labelledby="trailer-heading">
-<p class="eyebrow">Grapple Boss'u izle</p>
-<h2 id="trailer-heading">İşin başına geç.</h2>
-<div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/5Z7CWLQ3Byw" title="Grapple Boss Türkçe tanıtım videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-<p class="fine">Türkçe tanıtım videosu / Turkish gameplay trailer · YouTube</p>
-</section>
-<section id="oyun">
-<p class="eyebrow">Her döküm bir denge işi</p>
-<h2>Acele etmeden ustalaş.</h2>
-<div class="cards">
-<article class="card"><span class="number">KAVRA / TAŞI / BIRAK</span><h3>Yükü dengede tut.</h3><p>Kamyon kasasını doldur, konveyörü besle ve siloya dikkatli döküm yap. Yere dökülen parçalar ve sert çarpmalar puanını azaltır.</p></article>
-<article class="card"><span class="number">KAZAN / GELİŞTİR</span><h3>Kendi ritmini bul.</h3><p>Limanlarda para ve itibar kazan. Hidrolik, dönüş motoru, polip silindiri ve sönümleyici yükseltmeleriyle makineni geliştir.</p></article>
-<article class="card"><span class="number">DENE / MEYDAN OKU</span><h3>Aynı işi kim daha iyi yapar?</h3><p>Hızlı oyunda hava ve zorluğu seç. Meydan okuma kodunu arkadaşınla paylaş; aynı koşullardaki sonuçlarınızı karşılaştırın.</p></article>
-</div>
-</section>
-<section id="english" class="english" lang="en">
-<div><p class="eyebrow">Grapple Boss · Crane simulator</p><h2>Grab the load.<br>Make a clean drop.</h2><p>Operate a grapple crane in ports across Türkiye and the USA. Load scrap into a truck, feed a conveyor and aim for the silo. Upgrade your machine as your career grows.</p><a class="cta" href="https://play.google.com/store/apps/details?id=com.grappleboss.app&amp;hl=en_US&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Downed%26utm_campaign%3Dgrapple_launch_en">Play on Google Play <span aria-hidden="true">↗</span></a></div>
-<div><h3>Two sticks. One steady load.</h3><p>Control the boom and grapple, manage the swing and build a clean-drop combo. Try different weather and difficulty settings in Quick Play, or send a friend a code to compare results on the same job.</p><p class="fine">Core gameplay works offline. Contains ads and optional in-app purchases, including the Usta subscription. Ads and purchases require an internet connection. The no-ads pack removes interstitial ads; optional rewarded ads remain available.</p></div>
-</section>
-</main>
-<footer><div class="wrap"><span>© 2026 Fuat Furkan Kahraman · Grapple Boss</span><div><a href="gizlilik.html">Gizlilik / Privacy</a><a href="kosullar.html">Koşullar / Terms</a><a href="destek.html">Destek / Support</a></div></div></footer>
-</body>
-</html>
+<main class="wrap" id="main">
+<div class="hero"><div><p class="eyebrow">Yüke hâkim ol. Limanda ustalaş.</p><h1>Grapple Boss:<br><span>Vinç Simülatörü</span></h1><p class="intro">Polipli yükleyicinin başına geç. Hurdayı kavra, salınımı kontrol et ve yükünü hedefe bırak. Türkiye ve ABD limanlarında iş al; kazandıklarınla makineni geliştir.</p><a class="cta" href="https://play.google.com/store/apps/details?id=com.grappleboss.app&amp;hl=tr&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Downed%26utm_campaign%3Dgrapple_launch_tr">Google Play’de oyna <span aria-hidden="true">↗</span></a><p class="fine">Ana oynanış çevrimdışı kullanılabilir. Reklamlar ve isteğe bağlı uygulama içi satın almalar içerir; reklam ve mağaza işlemleri internet gerektirir.</p><a class="secondary" href="nasil-oynanir/">Nasıl oynanır? →</a></div>
+<figure><img class="game-shot" src="https://play-lh.googleusercontent.com/pJc54zirnAPJfioVBqTXg4_2XKGszwp4HuCjHZi-Th37dPw9mfWND3pGwKVBhIBBXrDkOT3KzYENTKZSxcIltg=w1052-h592-rw" width="1080" height="1920" alt="Grapple Boss’ta iki kontrol çubuğuyla polipli yükleyiciyi kullanarak kamyona hurda yükleme ekranı" fetchpriority="high" decoding="async"><figcaption>Oyunun Google Play ekran görüntüsü</figcaption></figure></div>
+<div class="strip" aria-label="Oyun özellikleri"><span><b>01</b>İki kontrol çubuğu</span><span><b>02</b>Türkiye ve ABD limanları</span><span><b>03</b>Kariyer ve hızlı oyun</span></div>
+<section id="oyun"><p class="eyebrow">Her döküm bir denge işi</p><h2>Acele etmeden ustalaş.</h2><div class="cards"><article class="card"><span class="number">KAVRA / TAŞI / BIRAK</span><h3>Yükü dengede tut.</h3><p>Kamyon kasasını doldur, konveyörü besle ve siloya dikkatli döküm yap. Yere dökülen parçalar ve sert çarpmalar puanını azaltır.</p></article><article class="card"><span class="number">KAZAN / GELİŞTİR</span><h3>Kendi ritmini bul.</h3><p>Para ve itibar kazan; yeni şehirlerin kilidini aç. Hidrolik, dönüş motoru, polip silindiri ve sönümleyici yükseltmeleriyle makineni geliştir.</p></article><article class="card"><span class="number">DENE / MEYDAN OKU</span><h3>Aynı işi kim daha iyi yapar?</h3><p>Hızlı oyunda limanı, hava durumunu ve zorluğu seç. Meydan okuma kodunu arkadaşınla paylaş; aynı koşullardaki sonuçlarınızı karşılaştırın.</p></article></div><p class="intro-link">İki kontrol çubuğu, temiz döküm ve üç iş türü için kısa oynanış rehberine bak. <a href="nasil-oynanir/">Nasıl oynanır? →</a></p></section>
+<section aria-labelledby="trailer-heading"><h2 id="trailer-heading">Grapple Boss’u çalışırken gör.</h2><div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/5Z7CWLQ3Byw" title="Türkçe tanıtım videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><p class="fine">25 saniyelik Türkçe tanıtım videosu · YouTube · <a href="https://www.youtube.com/watch?v=5Z7CWLQ3Byw">YouTube’da izle</a></p></section>
+<section class="faq" id="sorular"><h2>Başlamadan önce</h2><details><summary>Grapple Boss nasıl bir oyun?</summary><p>Grapple Boss, polipli bir iş makinesiyle limanlarda hurda yüklediğin 3D vinç simülasyonudur. İki kontrol çubuğuyla bomu ve polipi yönetir, yükün salınımını kontrol edip farklı hedeflere döküm yaparsın.</p></details>
+<details><summary>İnternet olmadan oynayabilir miyim?</summary><p>Evet. Ana oynanış çevrimdışı kullanılabilir. Reklamlar, ödüllü reklam seçenekleri ve mağaza işlemleri internet bağlantısı gerektirir.</p></details>
+<details><summary>Oyunda hangi işler var?</summary><p>Kamyon yükleme, konveyör besleme ve siloya döküm işleri bulunur. Kariyerde Türkiye ve ABD limanlarında para ve itibar kazanır, yeni şehirlerin kilidini açarsın.</p></details>
+<details><summary>Arkadaşımla nasıl yarışırım?</summary><p>Bir meydan okuma kodu paylaşarak arkadaşının aynı koşullarda aynı işi oynamasını sağlayabilir, sonuçlarınızı karşılaştırabilirsiniz. Bu özellik canlı çok oyunculu maç değildir.</p></details>
+<details><summary>Oyunda reklam ve satın alma var mı?</summary><p>Oyun reklamlar, isteğe bağlı uygulama içi satın almalar ve Usta üyeliği içerir. Reklamsız paket geçiş reklamlarını kaldırır; isteğe bağlı ödüllü reklamlar kullanılabilir.</p></details>
+<details><summary>Kontrollere alışmak için ne yapmalıyım?</summary><p>Hızlı oyunda bir iş, liman, hava durumu ve zorluk seçerek pratik yapabilirsin. Kontrol ayarlarını ve kamera görünümünü kendine göre düzenleyebilirsin.</p></details></section>
+<section><h2>Sıradaki vardiya senin.</h2><a class="cta" href="https://play.google.com/store/apps/details?id=com.grappleboss.app&amp;hl=tr&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Downed%26utm_campaign%3Dgrapple_launch_tr">Google Play’de oyna <span aria-hidden="true">↗</span></a><p class="fine">Ana oynanış çevrimdışı kullanılabilir. Reklamlar ve isteğe bağlı uygulama içi satın almalar içerir; reklam ve mağaza işlemleri internet gerektirir.</p></section>
+</main><footer><div class="wrap"><span>Grapple Boss · Amanos Games<br>© 2026 Fuat Furkan Kahraman</span><div><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html">Koşullar</a><a href="destek.html">Destek</a></div></div></footer>
+</body></html>
